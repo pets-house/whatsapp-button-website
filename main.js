@@ -1,4 +1,7 @@
-function whatsappButton({brandName:t="",buttonName:e="",brandSubtitleText:a="",welcomeMessage:i="",phoneNumber:o="",brandImageUrl:r="",callToAction:l="",buttonSize:n="large",buttonIconSize:w=22,prefillMessage:p="",buttonPosition:d="right",poweredByColor:s}){var c=""===p?i:p,g=""!==e;let b=`
+function whatsappButton({ brandName: t = "", buttonName: e = "", brandSubtitleText: a = "", welcomeMessage: i = "", phoneNumber: o = "", brandImageUrl: r = "", callToAction: l = "", buttonSize: n = "large", buttonIconSize: w = 22, prefillMessage: p = "", buttonPosition: d = "right", poweredByColor: s }) {
+  var c = "" === p ? i : p,
+    g = "" !== e;
+  let b = `
       <div>
         
 <style>
@@ -16,7 +19,7 @@ function whatsappButton({brandName:t="",buttonName:e="",brandSubtitleText:a="",w
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5n-wU.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
   
@@ -487,7 +490,7 @@ function whatsappButton({brandName:t="",buttonName:e="",brandSubtitleText:a="",w
         <div class='ucaOIDgu'>
            <a rel='noopener noreferrer' target='_blank'
               style='text-decoration:none;width:100%'
-              href='https://api.whatsapp.com/send?phone={{phoneNumber}}&amp;text={{defaultChatMessage}}'>
+              href='https://api.whatsapp.com/send?phone={{phoneNumber}}&text={{defaultChatMessage}}'>
               <button class='vRMleABk'>
                  <div class='OgWqoFip'>
                     <svg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' width='22' height='22'>
@@ -507,10 +510,6 @@ function whatsappButton({brandName:t="",buttonName:e="",brandSubtitleText:a="",w
                    <path fill-rule='evenodd' clip-rule='evenodd' d='M5.84653 0.0360377C6.13974 0.138097 6.33912 0.438354 6.33912 0.777828V4.66669L9.15651 4.66669C9.41915 4.66669 9.65997 4.82804 9.78125 5.08527C9.90254 5.34251 9.88415 5.65289 9.73354 5.89048L4.80311 13.6682C4.62681 13.9463 4.30753 14.066 4.01433 13.964C3.72113 13.8619 3.52174 13.5616 3.52174 13.2222L3.52174 9.33331H0.704349C0.441715 9.33331 0.200895 9.17196 0.0796083 8.91473C-0.0416787 8.65749 -0.0232851 8.34711 0.127325 8.10952L5.05775 0.331805C5.23405 0.0536972 5.55333 -0.0660216 5.84653 0.0360377Z' fill='#FFA800' />
                    </svg>
                 </span>
-                Powered by
-                <a rel='noopener noreferrer' target='_blank' class='FAvMKxlv' href='https://sleekflow.io/?utm_source=tool&utm_medium=whatsapp-button&utm_campaign=webbutton'>
-                   <span>SleekFlow</span>
-                </a>
               </span>
             </p>
            
@@ -537,13 +536,14 @@ function whatsappButton({brandName:t="",buttonName:e="",brandSubtitleText:a="",w
               <path fill-rule='evenodd' clip-rule='evenodd' d='M5.84653 0.0360377C6.13974 0.138097 6.33912 0.438354 6.33912 0.777828V4.66669L9.15651 4.66669C9.41915 4.66669 9.65997 4.82804 9.78125 5.08527C9.90254 5.34251 9.88415 5.65289 9.73354 5.89048L4.80311 13.6682C4.62681 13.9463 4.30753 14.066 4.01433 13.964C3.72113 13.8619 3.52174 13.5616 3.52174 13.2222L3.52174 9.33331H0.704349C0.441715 9.33331 0.200895 9.17196 0.0796083 8.91473C-0.0416787 8.65749 -0.0232851 8.34711 0.127325 8.10952L5.05775 0.331805C5.23405 0.0536972 5.55333 -0.0660216 5.84653 0.0360377Z' fill='#FFA800' />
            </svg>
         </span>
-        <span style='{{poweredByColor}}'>Powered by</span>
-        <a id='fPtZihvf' href='https://sleekflow.io/whatsapp-button-generator' target='_blank' rel='noreferrer'>SleekFlow</a>
         </p>
      </div>
   </div>
-  <span style='{{hideBlendText}}' class='ueSiafJY {{poweredByBlendLabel}}'>Powered by </span>
+  <span style='{{hideBlendText}}' class='ueSiafJY {{poweredByBlendLabel}}'> </span>
 </div>
 
       </div>  
-       `;var f={regular:'TBeNAzvX',large:'iYZTrXdQ',small:'jgVLJYDq'};b=(b=(b=(b=(b=(b=(b=(b=b.replaceAll("{{buttonName}}",e)).replaceAll("{{brandImageUrl}}",r)).replaceAll("{{brandName}}",t)).replaceAll("{{brandSubtitleText}}",a)).replaceAll("{{buttonSize}}",f[n]||f.large)).replaceAll("{{callToAction}}",l)).replaceAll("{{phoneNumber}}",o)).replaceAll("{{prefillMessage}}",p),b=""===p?b.replaceAll("{{prefillMessageSection}}",""):b.replaceAll("{{prefillMessageSection}}","<div class='NOGZkiTv'><div class='vovqUrrZ'>"+p+"</div></div>"),b=(b=(b=(b="left"===d?b.replaceAll("{{buttonPosition}}",'OkYSHocK'):b.replaceAll("{{buttonPosition}}","")).replaceAll("text={{defaultChatMessage}}","text="+c.replace(/(?:\r\n|\r|\n)/g,"%0a"))).replaceAll("{{welcomeMessage}}",i)).replaceAll("{{buttonIconSize}}",w),b=g?(b=b.replaceAll("{{buttonMargin}}",'xjApbONy')).replaceAll("{{buttonPadding}}",'yIakIlzN'):(b=b.replaceAll("{{buttonMargin}}","")).replaceAll("{{buttonPadding}}",""),b=(b=s?(b=b.replaceAll("{{poweredByColor}}","color: "+s)).replaceAll("{{hideBlendText}}","display: none"):b.replaceAll("{{poweredByColor}}","color: white;opacity: 0")).replaceAll("{{poweredByBlendLabel}}","left"===d?"left":"right"),document.querySelector("body").insertAdjacentHTML("beforeend",b),document.querySelector("#YmBQHnhK").style.display="none",document.querySelector("#iTwyoyrw").onclick=()=>{var t=document.querySelector("#YmBQHnhK"),e=window.getComputedStyle(t).display;t.style.display="none"===e?"grid":"none"},document.querySelector("#DMXVfOKs").onclick=()=>{document.querySelector("#YmBQHnhK").style.display="none"}}
+       `;
+  var f = { regular: 'TBeNAzvX', large: 'iYZTrXdQ', small: 'jgVLJYDq' };
+  b = (b = (b = (b = (b = (b = (b = (b = b.replaceAll("{{buttonName}}", e)).replaceAll("{{brandImageUrl}}", r)).replaceAll("{{brandName}}", t)).replaceAll("{{brandSubtitleText}}", a)).replaceAll("{{buttonSize}}", f[n] || f.large)).replaceAll("{{callToAction}}", l)).replaceAll("{{phoneNumber}}", o)).replaceAll("{{prefillMessage}}", p), b = "" === p ? b.replaceAll("{{prefillMessageSection}}", "") : b.replaceAll("{{prefillMessageSection}}", "<div class='NOGZkiTv'><div class='vovqUrrZ'>" + p + "</div></div>"), b = (b = (b = (b = "left" === d ? b.replaceAll("{{buttonPosition}}", 'OkYSHocK') : b.replaceAll("{{buttonPosition}}", "")).replaceAll("text={{defaultChatMessage}}", "text=" + c.replace(/(?:\r\n|\r|\n)/g, "%0a"))).replaceAll("{{welcomeMessage}}", i)).replaceAll("{{buttonIconSize}}", w), b = g ? (b = b.replaceAll("{{buttonMargin}}", 'xjApbONy')).replaceAll("{{buttonPadding}}", 'yIakIlzN') : (b = b.replaceAll("{{buttonMargin}}", "")).replaceAll("{{buttonPadding}}", ""), b = (b = s ? (b = b.replaceAll("{{poweredByColor}}", "color: " + s)).replaceAll("{{hideBlendText}}", "display: none") : b.replaceAll("{{poweredByColor}}", "color: white;opacity: 0")).replaceAll("{{poweredByBlendLabel}}", "left" === d ? "left" : "right"), document.querySelector("body").insertAdjacentHTML("beforeend", b), document.querySelector("#YmBQHnhK").style.display = "none", document.querySelector("#iTwyoyrw").onclick = () => { var t = document.querySelector("#YmBQHnhK"), e = window.getComputedStyle(t).display; t.style.display = "none" === e ? "grid" : "none" }, document.querySelector("#DMXVfOKs").onclick = () => { document.querySelector("#YmBQHnhK").style.display = "none" }
+}
